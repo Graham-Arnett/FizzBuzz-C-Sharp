@@ -11,19 +11,19 @@
             {
                 Console.Write("Enter an integer please: ");
                 int entry = int.Parse(Console.ReadLine());
-                if(entry % 3 == 0) 
+                if(entry % 5 == 0 && entry % 3 == 0) 
                 {
                     Console.ForegroundColor = ConsoleColor.Green;
-                    Console.WriteLine("FIZZ");
+                    Console.WriteLine("FIZZBUZZ");
                 }
                 else if(entry % 5 == 0) 
                 { 
                     Console.ForegroundColor= ConsoleColor.Blue;
                     Console.WriteLine("BUZZ!");
                 }
-                else if (entry % 5 == 0 && entry % 3 == 0)
+                else if (entry % 3 == 0)
                 {
-                    Console.WriteLine("FIZZBUZZ!");
+                    Console.WriteLine("FIZZ!");
                 }
                 else
                 {
